@@ -7,9 +7,11 @@ fs.readFile('baby_names.csv', function (err, data) {
         console.log(err)
         // logs the error for us to see
         throw err
-        // stop executing on the error 
+        // stop executing based on the error 
     }
     var parsedData=data.toString('utf-8');
+     // transform into human- readable characters(utf-8) string 
     console.log(parsedData); 
+    // logs parsed data into console 
     }) 
-    // transform into human- readable characters(utf-8) string 
+   
